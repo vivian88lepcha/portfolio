@@ -1,0 +1,93 @@
+.heading-primary {
+  font-size: 7rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3rem; }
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-10px); } }
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-10px); } }
+
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero__overlay::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4); }
+  .hero__container {
+    position: absolute;
+    width: 100%; }
+  .hero__content {
+    text-align: center;
+    transform: translateY(-4rem); }
+  .hero__intro {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #e68a00; }
+    .hero__intro span:after {
+      content: "|";
+      text-align: center;
+      display: inline-block;
+      padding: 0 8px 0 14px;
+      color: rgba(255, 255, 255, 0.6); }
+  .hero__salutation {
+    font-size: 3rem;
+    color: #e68a00;
+    letter-spacing: 0.3rem;
+    font-style: italic; }
+  .hero__scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    display: inline-block; }
+  .hero__scroll-down-link {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem; }
+
+.icons--hand:before {
+  font-size: 3rem;
+  color: #ffffff; }
+
+.icons--arrow-down {
+  display: block;
+  text-align: center;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+  display: block;
+  font-size: 20px; }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif; }
+
+html {
+  font-size: 62.5%; }

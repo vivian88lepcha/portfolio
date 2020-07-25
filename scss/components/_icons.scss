@@ -1,0 +1,14 @@
+.icons {
+    &--hand:before {
+        font-size: 3rem;
+        color: $color-white;
+    }
+    &--arrow-down {
+        display: block;
+        text-align: center;
+        animation: bounce 1s infinite alternate;
+        -webkit-animation: bounce 1s infinite alternate;
+        display: block;
+        font-size: 20px;
+    }
+}
